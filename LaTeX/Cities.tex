@@ -26,101 +26,1776 @@
 
 % Icon Font
 \newfontfamily\fontawesome[Scale=3.0]{icons.ttf}
-\newcommand{\iconhospital}{\fontawesome{﯏}}
 % Global Commands
 \newcommand{\seperator}[1]{\\ \vspace{\titlespacing} \hrulefill {} \tiny \bfseries #1 \normalfont \normalsize \hrulefill \\ \vspace{\titlespacing}}
 \newcommand{\placetemplate}[1]{\LARGE \bfseries #1}
 \newcommand{\versiontemplate}[1]{\tiny --- #1 ---}
-
-% Document Only Commands
-\newcommand{\place}{\placetemplate HOSPITAL}
-\newcommand{\version}{\versiontemplate{Original}}
-
+\newcommand{\spy}{\placetemplate YOU ARE THE SPY}
+\newcommand{\iconspy}{\fontawesome{ﯵ}}
 % Begin Document
 \begin{document}
-	
-	% New Page
+	% New Page & Commands
+	\newcommand{\place}{\placetemplate AIRPLANE}
+	\newcommand{\version}{\versiontemplate{Original}}
+	\newcommand{\icon}{\fontawesome{﯁}}
 	\noindent \begin{tikzpicture}[outer sep=0]
-	
-	% SCROOGE
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\node[place, fill=gray] at (4.45,18.7) { \place };
-	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \iconhospital };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { air marshal};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { flight attendant };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { first class passanger };
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { economy class passenger };
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { captain };
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { navigator };
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { mechanic};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { co-pilot };
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { figure out your location };
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate BANK}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯜ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
 	\node[role, fill=gray] at (4.45,14.2) { @TODO};
 	\node[version, text=gray] at (4.45,13.2) { \version };
-	
-	% GHOSTBUSTER
+	%%%
 	\node[place, fill=gray] at (13.35,18.7) { \place };
-	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \iconhospital };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
 	\node[role, fill=gray] at (13.35,14.2) { @TODO };
 	\node[version, text=gray] at (13.35,13.2) { \version };
-	
-	% JACOB MARLEY
+	%%%
 	\node[place, fill=gray] at (22.25,18.7) { \place };
-	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \iconhospital };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
 	\node[role, fill=gray] at (22.25,14.2) { @TODO};
 	\node[version, text=gray] at (22.25,13.2) { \version };
-	
-	
-	
-	
-	
-	% GHOST OF CHRISTMAS PAST
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\node[place, fill=gray] at (4.45,12.3) { \place };
-	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \iconhospital };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
 	\node[role, fill=gray] at (4.45,7.8) { @TODO};
 	\node[version, text=gray] at (4.45,6.8) { \version };
-	
-	% GHOST OF CHRISTMAS PRESENT
+	%%%
 	\node[place, fill=gray] at (13.35,12.3) { \place };
-	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \iconhospital };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
 	\node[role, fill=gray] at (13.35,7.8) { @TODO};
 	\node[version, text=gray] at (13.35,6.8) { \version };
-	
-	% GHOST OF CHRISTMAS FUTURE
+	%%%
 	\node[place, fill=gray] at (22.25,12.3) { \place };
-	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \iconhospital };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
 	\node[role, fill=gray] at (22.25,7.8) { @TODO};
 	\node[version, text=gray] at (22.25,6.8) { \version };
-	
-	
-	
-	
-	
-	
-	% BILL MURRAY
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\node[place, fill=gray] at (4.45,5.9) { \place };
-	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \iconhospital };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
 	\node[role, fill=gray] at (4.45,1.4) { @TODO};
 	\node[version, text=gray] at (4.45,0.4) { \version };
-	
-	% JIM CARREY
+	%%%
 	\node[place, fill=gray] at (13.35,5.9) { \place };
-	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \iconhospital };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
 	\node[role, fill=gray] at (13.35,1.4) { @TODO};
 	\node[version, text=gray] at (13.35,0.4) { \version };
-	
-	% NEPHEW FRED
-	\node[place, fill=gray] at (22.25,5.9) { \place };
-	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconhospital };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
 	\node[role, fill=gray] at (22.25,1.4) { @TODO};
 	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate BEACH}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯝ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate BROADWAY THEATER}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯞ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate CASINO}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯟ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate CATHEDRAL}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯠ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate CIRCUS TENT}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯡ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate CORPORATE PARTY}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{﯃}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate CRUSADER ARMY}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯣ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate DAY SPA}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯰ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate EMBASSY}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯤ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate HOCKEY STADIUM}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯦ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate HOSPITAL}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{﯏}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate HOTEL}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯧ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate MILITARY BASE}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯩ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate MOVIE STUDIO}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯪ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate OCEAN LINER}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯢ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate PASSENGER TRAIN}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯳ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate PIRATE SHIP}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯫ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate POLAR STATION}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯨ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate POLICE STATION}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯬ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate RESTAURANT}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯭ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate SCHOOL}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯮ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate SERVICE STATION}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{﯌}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate SPACE STATION}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯱ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate SUBMARINE}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯲ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate SUPER MARKET}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{ﯯ}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% New Page & Commands
+	\renewcommand{\place}{\placetemplate UNIVERSITY}
+	\renewcommand{\version}{\versiontemplate{Original}}
+	\renewcommand{\icon}{\fontawesome{}}
+	\noindent \begin{tikzpicture}[outer sep=0]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,18.7) { \place };
+	\node[cardtext, text=gray] at (4.45,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,14.2) { @TODO};
+	\node[version, text=gray] at (4.45,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,18.7) { \place };
+	\node[cardtext, text=gray] at (13.35,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,14.2) { @TODO };
+	\node[version, text=gray] at (13.35,13.2) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,18.7) { \place };
+	\node[cardtext, text=gray] at (22.25,17.2) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,14.2) { @TODO};
+	\node[version, text=gray] at (22.25,13.2) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,12.3) { \place };
+	\node[cardtext, text=gray] at (4.45,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,7.8) { @TODO};
+	\node[version, text=gray] at (4.45,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,12.3) { \place };
+	\node[cardtext, text=gray] at (13.35,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,7.8) { @TODO};
+	\node[version, text=gray] at (13.35,6.8) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,12.3) { \place };
+	\node[cardtext, text=gray] at (22.25,10.8) { \Huge \icon };
+	\node[role, fill=gray] at (22.25,7.8) { @TODO};
+	\node[version, text=gray] at (22.25,6.8) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\node[place, fill=gray] at (4.45,5.9) { \place };
+	\node[cardtext, text=gray] at (4.45,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (4.45,1.4) { @TODO};
+	\node[version, text=gray] at (4.45,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (13.35,5.9) { \place };
+	\node[cardtext, text=gray] at (13.35,4.4) { \Huge \icon };
+	\node[role, fill=gray] at (13.35,1.4) { @TODO};
+	\node[version, text=gray] at (13.35,0.4) { \version };
+	%%%
+	\node[place, fill=gray] at (22.25,5.9) { \spy };
+	\node[cardtext, text=gray] at (22.25,4.4) { \Huge \iconspy };
+	\node[role, fill=gray] at (22.25,1.4) { @TODO};
+	\node[version, text=gray] at (22.25,0.4) { \version };
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw (0,0) -- (26.7,0);
+	\draw (0,6.4) -- (26.7,6.4);
+	\draw (0,12.8) -- (26.7,12.8);
+	\draw (0,19.2) -- (26.7,19.2);
+	\draw (0,0) -- (0,19.2);
+	\draw (8.9,0) -- (8.9,19.2);
+	\draw (17.8,0) -- (17.8,19.2);
+	\draw (26.7,0) -- (26.7,19.2);
+	\end{tikzpicture}
 
-
-
-
-
-\draw (0,0) -- (26.7,0);
-\draw (0,6.4) -- (26.7,6.4);
-\draw (0,12.8) -- (26.7,12.8);
-\draw (0,19.2) -- (26.7,19.2);
-\draw (0,0) -- (0,19.2);
-\draw (8.9,0) -- (8.9,19.2);
-\draw (17.8,0) -- (17.8,19.2);
-\draw (26.7,0) -- (26.7,19.2);
-
-
-
-\end{tikzpicture}
 
 %Background is not my own. But courtesy of a user on BGG
 \includepdf[pages={1}]{cardsbackground.pdf}
